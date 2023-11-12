@@ -13,58 +13,35 @@ ul {
 
 body {
   color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  background: var(--color-primary-light);
 }
 
-/* p {
-  
-  font-family: Poppins;
-  font-size: 18px;
+address {
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} */
+}
 
 /* Global title */
 
 .section-title {
   color: var(--color-primary-dark);
-
-  font-family: Poppins;
   font-size: 64px;
-  font-style: normal;
   font-weight: 900;
   line-height: 84px;
 }
 
 .section-title .section-title-accent {
   color: var(--color-brand-dark);
-  font-family: Poppins;
   font-size: 64px;
-  font-style: normal;
   font-weight: 900;
   line-height: 84px;
 }
 
 /* Global text */
-
-.par-accent-primary {
-  color: var(--color-brand-light);
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.par-accent-secondary {
-  color: var(--color-brand-light);
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
 
 /* Button */
 
@@ -87,42 +64,44 @@ body {
 .nav-link {
   color: var(--color-primary-light);
   text-align: center;
-
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  text-decoration: none;
 }
 
 .nav-link:hover {
   color: var(--color-brand-light);
   text-align: center;
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  text-decoration: underline;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--color-primary-light);
-  font-family: Poppins;
   font-size: 128px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
 }
 
 .hero-title .accent {
   color: var(--color-brand-light);
   text-align: center;
-  font-family: Poppins;
   font-size: 128px;
-  font-style: normal;
   font-weight: 900;
-  line-height: normal;
+}
+
+/* Traditions section */
+.traditions-text {
+  color: var(--color-primary-dark);
+}
+
+.traditions-text .par-accent-uppercase {
+  color: var(--color-brand-light);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.traditions-text .par-accent-lowercase {
+  color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 /* Advantages section */
@@ -133,44 +112,56 @@ body {
   backdrop-filter: blur(2px);
 }
 
+.advatages-item {
+  color: var(--color-primary-light);
+  font-size: 20px;
+  font-weight: 300;
+}
+
 /* Bakers section */
 
 .bakers-title {
   color: var(--color-primary-dark);
-  font-family: Poppins;
   font-size: 40px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 /* Formats section */
 .formats-title {
   color: var(--color-primary-light);
-  font-family: Poppins;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
-.par-formats-text {
+.formats-text {
   color: var(--color-primary-light);
-
-  font-family: Poppins;
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
-  line-height: normal;
 }
 
 /* Contacts section */
 
 .contacts-call-to-action {
   color: var(--color-brand-dark);
-  font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+}
+
+/* Footer */
+
+.address-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.address-copyright {
+  color: #a18268;
+  font-size: 14px;
 }
