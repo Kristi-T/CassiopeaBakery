@@ -229,6 +229,10 @@ p {
   padding-top: 96px;
 }
 
+.traditions-photo {
+  border-radius: 400px 400px 0px 0px;
+}
+
 .traditions-text .par-accent-uppercase {
   color: var(--color-brand-normal);
   font-weight: 600;
