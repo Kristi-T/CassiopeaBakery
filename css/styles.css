@@ -233,10 +233,12 @@ p {
 .traditions-container {
   display: flex;
   justify-content: space-between;
-  gap: 40px;
 }
 .traditions-content {
   max-width: 710px;
+  display: flex;
+  /* justify-content: space-between; */
+  gap: 40px;
 }
 
 .traditions-text {
@@ -251,7 +253,9 @@ p {
 }
 
 .traditions-photo {
+  height: 100%;
   border-radius: 400px 400px 0px 0px;
+  flex-shrink: 0;
 }
 
 .traditions-text .par-accent-uppercase {
@@ -386,6 +390,19 @@ p {
 
 /* Contacts section */
 
+.contacts-section {
+  padding-bottom: 96px;
+}
+
+.contact-container {
+  display: flex;
+  gap: 32px;
+}
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
+}
 .contacts-call-to-action {
   color: var(--color-brand-dark);
 }
