@@ -32,7 +32,9 @@
   src: url("../fonts/poppins-v20-latin-900.woff2") format("woff2");
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -83,6 +85,10 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+a {
+  display: inline-block;
 }
 
 .section {
@@ -332,13 +338,22 @@ p {
 }
 .chefs-list {
   display: flex;
-  gap: 30px;
+  gap: 30px 40px;
+  /* column-gap: 30px;
+  row-gap: 40px; */
+  flex-wrap: wrap;
 }
 
 .chefs-item {
   flex-basis: calc((100% - 30px) / 2);
 }
+.chef-text p {
+  margin-bottom: 24px;
+}
 
+.chef-text p:last-child {
+  margin-bottom: 0;
+}
 /* Formats section */
 
 /* .formats-section {
@@ -410,12 +425,36 @@ p {
 }
 
 /* Footer */
+.footer {
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: flex;
+  gap: 20px;
+}
+.footer-nav,
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+/* flex-grow: 1; or flex-basis: 50%; */
+.footer-logo,
+.footer-menu {
+  flex-grow: 1;
+}
 
 .address-link {
   color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
   font-weight: 300;
+}
+.address-list,
+.address-info {
+  flex-grow: 1;
 }
 
 .address-icon {

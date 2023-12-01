@@ -106,14 +106,14 @@
                 />
                 <div>
                   <h3 class="baker-title">Настя</h3>
-                  <p class="chefs-text">Привіт, я Настя!</p>
-                  <p class="chefs-text">
-                    Вже 10 років, я втілюю <br />
-                    у життя цікаві та смачні ідеї.
-                  </p>
-                  <p class="chefs-text">
-                    Я cпечу для вас <br />найсмачніші вироби!
-                  </p>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я втілюю <br />
+                      у життя цікаві та смачні ідеї.
+                    </p>
+                    <p>Я cпечу для вас <br />найсмачніші вироби!</p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -224,79 +224,85 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="/">
-            <img
-              src="./images/logo.svg"
-              alt="Logo of Cassiopea's Modern Bakery"
-            />
-          </a>
-          <ul>
-            <li>
-              <a class="nav-link" href="#traditions-section" target="_blank"
-                >Наші традиції</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="#chefs-section" target="_blank"
-                >Шеф-кухарі</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="#formats-section" target="_blank"
-                >Формати</a
-              >
-            </li>
-            <li>
-              <a class="nav-link" href="#contacts-section" target="_blank"
-                >Контакти</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="address-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://maps.app.goo.gl/63n3jiHiLVAru5DZ7"
-                target="_blank"
-              >
-                Україна, м. Київ, вул. Січових Стрільців 54</a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="/images/sprite.svg#icon-facebook"></use>
-                </svg>
-                <!-- facebook -->
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a href="/">
+                <img
+                  src="./images/logo.svg"
+                  alt="Logo of Cassiopea's Modern Bakery"
+                />
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="address-icon" width="32" height="32">
-                  <use href="/images/sprite.svg#icon-instagram"></use>
-                </svg>
-                <!-- instagram -->
-              </a>
-            </li>
-          </ul>
-          <a class="address-link" href="#" target="_blank"
-            >Політика конфіденційності</a
-          >
-          <p class="address-copyright">&copy; 2023 Дані захищені</p>
-        </address>
+            </div>
+            <ul class="footer-menu">
+              <li>
+                <a class="nav-link" href="#traditions-section" target="_blank"
+                  >Наші традиції</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#chefs-section" target="_blank"
+                  >Шеф-кухарі</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#formats-section" target="_blank"
+                  >Формати</a
+                >
+              </li>
+              <li>
+                <a class="nav-link" href="#contacts-section" target="_blank"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a class="address-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/63n3jiHiLVAru5DZ7"
+                  target="_blank"
+                >
+                  Україна, м. Київ, вул. Січових Стрільців 54</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="/images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  <!-- facebook -->
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="/images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  <!-- instagram -->
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" href="#" target="_blank"
+                >Політика конфіденційності</a
+              >
+              <p class="address-copyright">&copy; 2023 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
