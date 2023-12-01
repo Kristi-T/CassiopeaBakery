@@ -233,12 +233,16 @@ p {
 .traditions-container {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 .traditions-content {
-  max-width: 710px;
-  display: flex;
-  /* justify-content: space-between; */
-  gap: 40px;
+  max-width: 700px;
+  flex-grow: 1;
+}
+.traditions-photo {
+  border-radius: 400px 400px 0px 0px;
+  flex-shrink: 0;
+  flex-grow: 1;
 }
 
 .traditions-text {
@@ -250,12 +254,6 @@ p {
 
 .traditions-section {
   padding-top: 96px;
-}
-
-.traditions-photo {
-  height: 100%;
-  border-radius: 400px 400px 0px 0px;
-  flex-shrink: 0;
 }
 
 .traditions-text .par-accent-uppercase {
