@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header-background">
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -190,7 +190,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="/images/sprite.svg#icon-Arrow"></use>
               </svg>
@@ -209,7 +209,9 @@
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
               <!-- Form -->
-              <!-- <button class="button-primary" type="button">Замовити дзвінок</button> -->
+              <!-- <button class="button-primary modal-btn-open" type="button">
+                Замовити дзвінок
+              </button> -->
             </div>
 
             <iframe
@@ -308,7 +310,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button type="button" class="modal-btn-close">Close</button>
       </div>
