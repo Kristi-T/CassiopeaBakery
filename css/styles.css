@@ -201,17 +201,12 @@ a {
 /* Hero section */
 
 .hero-section {
+  height: 736px;
   padding: 272px auto;
   background-image: url("/images/header-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  /* background-image: linear-gradient(
-    103deg,
-    rgba(18, 18, 17, 0.78) 2.03%,
-    rgba(18, 18, 17, 0.6) 58.46%,
-    rgba(18, 18, 17, 0) 90.36%
-  ); */
 }
 
 .hero-title {
@@ -314,8 +309,23 @@ a {
 }
 
 .chefs-title {
-  max-width: 520px;
+  position: relative;
   margin: 0 auto 80px;
+}
+.chefs-title::after,
+.chefs-title::before {
+  width: 352px;
+  border: 2px solid var(--color-brand-light);
+  content: "";
+  position: absolute;
+  bottom: 24px;
+}
+.chefs-title::before {
+  left: 0;
+}
+
+.chefs-title::after {
+  right: 0;
 }
 
 .chefs-card {
@@ -329,18 +339,11 @@ a {
     -16px 16px 0 2px var(--color-secondary-dark);
 }
 
-.chefs-title::after,
-.chefs-title::before {
-  display: block;
-  width: 352px;
-  border: 2px solid var(--color-brand-light);
-  content: "";
-}
 .chefs-list {
   display: flex;
-  gap: 30px 40px;
-  /* column-gap: 30px;
-  row-gap: 40px; */
+  /* gap: 30px 40px; */
+  column-gap: 30px;
+  row-gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -393,7 +396,7 @@ a {
 }
 
 .formats-text {
-  color: var(--color-primary-light);
+  color: var(--color-primary-dark);
   font-size: 14px;
   font-weight: 300;
 }
@@ -427,6 +430,34 @@ a {
 /* Footer */
 .footer {
   padding: 32px 0;
+  position: relative;
+  background-image: url("/images/footer-background.png");
+  background-color: var(--color-primary-dark);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.footer::before {
+  left: 0;
+  width: 180px;
+  height: 120px;
+  background-image: url(/images/footer-bread-left.png);
+}
+
+.footer::after {
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url(/images/footer-bread-right.png);
 }
 
 .footer-container {
@@ -476,7 +507,37 @@ a {
   color: #a18268;
   font-size: 14px;
 }
-.footer {
-  background-image: url("/images/footer-background.png");
-  background-color: var(--color-primary-dark);
+
+/* Modal */
+.backdrop {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.backdrop.is-hidden {
+  /* display: none; */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
 }
