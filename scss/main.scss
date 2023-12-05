@@ -1,0 +1,509 @@
+@import './base';
+
+@import './utils/variables';
+
+@import './utils/fonts';
+
+@import './utils/utils';
+
+.section {
+	padding: 48px 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1288px;
+	margin: 0 auto;
+	padding: 0 24px;
+}
+
+.section-title {
+	color: var(--color-primary-dark);
+	font-size: 64px;
+	font-weight: 900;
+	line-height: 84px;
+}
+
+.section-title.centered {
+	text-align: center;
+}
+
+.section-title .section-title-accent {
+	color: var(--color-brand-dark);
+	font-size: 64px;
+	font-weight: 900;
+	line-height: 84px;
+}
+
+/* Button */
+@import './components/buttons';
+
+/* Link */
+
+@import './components/links';
+
+/* Header */
+@import './components/header';
+
+/* Hero section */
+
+.hero-section {
+	height: 736px;
+	padding: 208px 0;
+	background-image: linear-gradient(103deg,
+			rgba(18, 18, 17, 0.78) 2.03%,
+			rgba(18, 18, 17, 0.6) 58.46%,
+			rgba(18, 18, 17, 0) 90.36%),
+		url("/images/header-background.jpg");
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+}
+
+.hero-title {
+	text-align: center;
+	color: var(--color-primary-light);
+	font-size: 128px;
+	font-weight: 900;
+	margin-bottom: 0;
+}
+
+/* .header-div {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.hero-title .accent {
+	color: var(--color-brand-normal);
+}
+
+/* Traditions section */
+
+.traditions-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.traditions-content {
+	max-width: 700px;
+	flex-grow: 1;
+}
+
+.traditions-photo {
+	border-radius: 400px 400px 0px 0px;
+	flex-shrink: 0;
+	flex-grow: 1;
+}
+
+.traditions-text {
+	color: var(--color-primary-dark);
+}
+
+.traditions-text:nth-child(3) {
+	max-width: 340px;
+}
+
+.traditions-section {
+	padding-top: 96px;
+}
+
+.traditions-text .par-accent-uppercase {
+	color: var(--color-brand-normal);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.traditions-text .par-accent-lowercase {
+	color: var(--color-brand-normal);
+	font-weight: 600;
+}
+
+.traditions-text:nth-child(3) {
+	max-width: 340px;
+}
+
+.traditions-text.limited {
+	max-width: 340px;
+}
+
+.traditions-title {
+	margin-bottom: 42px;
+}
+
+/* Advantages section */
+
+.advantages-section {
+	background-color: var(--color-brand-normal);
+	padding: 16px 0;
+}
+
+.advantages-list {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	backdrop-filter: blur(2px);
+}
+
+.advatages-item {
+	color: var(--color-primary-light);
+	font-size: 20px;
+	font-weight: 300;
+}
+
+/* Bakers section */
+
+.baker-title {
+	color: var(--color-primary-dark);
+	margin-bottom: 16px;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+.chefs-title {
+	position: relative;
+	margin: 0 auto 80px;
+}
+
+.chefs-title::after,
+.chefs-title::before {
+	width: 352px;
+	border: 2px solid var(--color-brand-light);
+	content: "";
+	position: absolute;
+	bottom: 24px;
+}
+
+.chefs-title::before {
+	left: 0;
+}
+
+.chefs-title::after {
+	right: 0;
+}
+
+.chefs-card {
+	display: flex;
+	gap: 30px;
+}
+
+.chef-photo {
+	border-radius: 4px 4px 4px 200px;
+	box-shadow: -16px 16px 0 0 var(--color-primary-light),
+		-16px 16px 0 2px var(--color-secondary-dark);
+}
+
+.chefs-list {
+	display: flex;
+	/* gap: 30px 40px; */
+	column-gap: 30px;
+	row-gap: 40px;
+	flex-wrap: wrap;
+}
+
+.chefs-item {
+	flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-text p {
+	margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+	margin-bottom: 0;
+}
+
+/* Formats section */
+
+/* .formats-section {
+} */
+
+.formats-container {
+	display: flex;
+	gap: 32px;
+	align-items: center;
+}
+
+.formats-list {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.formats-item {
+	flex-basis: calc((100% - 40px) / 3);
+}
+
+.formats-card {
+	height: 444px;
+	padding: 24px;
+	border-radius: 16px;
+	background-image: linear-gradient(180deg,
+			rgba(49, 38, 26, 0) 55.21%,
+			rgba(49, 38, 26, 0.71) 72.92%,
+			#31261a 100%);
+	transition: transform 0.3s;
+}
+
+.formats-card:hover {
+	transform: scale(1.05);
+}
+
+.formats-title {
+	color: var(--color-primary-light);
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.formats-text {
+	color: var(--color-primary-dark);
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.formats {
+	margin-bottom: 80px;
+}
+
+/* Contacts section */
+
+.contacts-section {
+	padding-bottom: 96px;
+}
+
+.contact-container {
+	display: flex;
+	gap: 32px;
+}
+
+.contact-map {
+	flex-shrink: 0;
+	border: none;
+	border-radius: 16px;
+}
+
+.contacts-call-to-action {
+	color: var(--color-brand-dark);
+}
+
+.contacts-title {
+	margin-bottom: 16px;
+}
+
+/* Footer */
+.footer {
+	padding: 32px 0;
+	position: relative;
+	background-image: url("/images/footer-background.png");
+	background-color: var(--color-primary-dark);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.footer::before,
+.footer::after {
+	position: absolute;
+	bottom: 0;
+	background-repeat: no-repeat;
+	content: "";
+}
+
+.footer::before {
+	left: 0;
+	width: 180px;
+	height: 120px;
+	background-image: url(/images/footer-bread-left.png);
+}
+
+.footer::after {
+	width: 380px;
+	height: 190px;
+	right: 0;
+	background-image: url(/images/footer-bread-right.png);
+}
+
+.footer-container {
+	display: flex;
+	gap: 20px;
+}
+
+.footer-nav,
+.footer-address {
+	flex-basis: 50%;
+	display: flex;
+	gap: 20px;
+}
+
+/* flex-grow: 1; or flex-basis: 50%; */
+.footer-logo,
+.footer-menu {
+	flex-grow: 1;
+}
+
+.address-link {
+	color: var(--color-primary-light);
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 300;
+	transition: color 0.3s;
+}
+
+.address-link:hover {
+	color: var(--color-brand-normal);
+}
+
+.address-list,
+.address-info {
+	flex-grow: 1;
+}
+
+.address-icon {
+	fill: var(--color-primary-light);
+	transition: fill 0.3s;
+}
+
+.address-icon:hover {
+	fill: var(--color-brand-normal);
+}
+
+.address-copyright {
+	color: #a18268;
+	font-size: 14px;
+}
+
+/* Modal */
+.backdrop {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	transition: opacity 0.4s, visibility 0.4s;
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	padding: 20px 0;
+}
+
+.modal {
+	padding: 128px;
+	position: relative;
+	max-width: 880px;
+	width: 100%;
+	max-height: 880px;
+	height: 100%;
+	background-color: var(--color-primary-light);
+	border-radius: 32px;
+	overflow-y: auto;
+}
+
+.modal-btn-close {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+}
+
+/* Form */
+.form-field {
+	margin-bottom: 32px;
+	/* position: relative; */
+}
+
+.form-input {
+	padding: 16px 42px;
+	width: 100%;
+	border-radius: 8px;
+	border: 1px solid var(--color-secondary-dark);
+	background-color: transparent;
+	font-size: 16px;
+	line-height: 1.17;
+}
+
+.form-input:focus {
+	border-color: var(--color-brand-normal);
+	outline: none;
+}
+
+.form-input::placeholder {
+	color: var(--color-secondary-dark);
+	font-size: 16px;
+	line-height: 1.17;
+}
+
+/* .form-input:required {
+  
+} */
+
+.form-label {
+	position: absolute;
+	left: 42px;
+	top: 16px;
+	/* font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-secondary-dark);
+  transition: transform 0.3s; */
+}
+
+.form-input:focus::placeholder {
+	color: var(--color-primary-dark);
+}
+
+.form-button {
+	display: block;
+	margin: 0 auto 24px;
+}
+
+.form-terms {
+	margin: 0 auto;
+	font-weight: 500px;
+	font-size: 12px;
+	line-height: 1.5;
+	text-align: center;
+	max-width: 220px;
+}
+
+.form-terms-link {
+	color: var(--color-primary-dark);
+	text-underline-offset: 2px;
+}
+
+/* Checkbox */
+
+/* .checkbox-input {
+  appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--color-brand-normal);
+}
+
+.checkbox {
+  position: relative;
+}
+
+.checkbox-label {
+  padding-left: 24px;
+}
+
+.checkbox-label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 5px;
+  border: 1px solid var(--color-primary-dark);
+  border-radius: 2px;
+} */
+
+/* .form-field:focus-within .form-label{
+transform: translate(-36px, -40px);} */
