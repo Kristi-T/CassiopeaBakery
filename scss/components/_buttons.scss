@@ -43,3 +43,11 @@
 .carousel-button.next {
 	transform: rotate(180deg);
 }
+
+.modal-btn-close {
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	background-color: transparent;
+	border: 0px solid var(--color-primary-dark);
+}

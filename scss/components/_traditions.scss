@@ -1,0 +1,51 @@
+.traditions-container {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+}
+
+.traditions-content {
+	max-width: 700px;
+	flex-grow: 1;
+}
+
+.traditions-photo {
+	border-radius: 400px 400px 0px 0px;
+	flex-shrink: 0;
+	flex-grow: 1;
+}
+
+.traditions-text {
+	color: var(--color-primary-dark);
+}
+
+.traditions-text:nth-child(3) {
+	max-width: 340px;
+}
+
+.traditions-section {
+	padding-top: 96px;
+}
+
+.traditions-text .par-accent-uppercase {
+	color: var(--color-brand-normal);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.traditions-text .par-accent-lowercase {
+	color: var(--color-brand-normal);
+	font-weight: 600;
+}
+
+.traditions-text:nth-child(3) {
+	max-width: 340px;
+}
+
+.traditions-text.limited {
+	max-width: 340px;
+}
+
+.traditions-title {
+	margin-bottom: 42px;
+}
