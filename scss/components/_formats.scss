@@ -15,6 +15,9 @@
 }
 
 .formats-card {
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
 position: relative;
 	height: 444px;
 	padding: 24px;
@@ -49,6 +52,7 @@ z-index: -1;
 	color: var(--color-primary-light);
 	font-size: 14px;
 	font-weight: 300;
+	
 }
 
 .formats {
