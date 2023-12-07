@@ -9,15 +9,17 @@
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
+
+	&__title {
+			text-align: center;
+			color: var(--color-primary-light);
+			font-size: 128px;
+			font-weight: 900;
+			margin-bottom: 0;
+		}
 }
 
-.hero-title {
-	text-align: center;
-	color: var(--color-primary-light);
-	font-size: 128px;
-	font-weight: 900;
-	margin-bottom: 0;
-}
+
 
 
 /* .header-div {
@@ -25,6 +27,6 @@
   margin-right: auto;
 } */
 
-.hero-title .accent {
-	color: var(--color-brand-normal);
-}
+// .hero-title .accent {
+// 	color: var(--color-brand-normal);
+// }
