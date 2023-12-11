@@ -1,22 +1,24 @@
 .contacts-section {
 	padding-bottom: 96px;
+&__container {
+		display: flex;
+		gap: 32px;
+	}
+&__title {
+	margin-bottom: 16px;
 }
+&__form-field{
+margin-bottom: 24px;}
 
-.contact-container {
-	display: flex;
-	gap: 32px;
-}
-
-.contact-map {
+&__map {
 	flex-shrink: 0;
 	border: none;
 	border-radius: 16px;
 }
 
-.contacts-call-to-action {
-	color: var(--color-brand-dark);
+&__button {
+	display: block;
+	margin: 0 auto 16px;
+}
 }
 
-.contacts-title {
-	margin-bottom: 16px;
-}

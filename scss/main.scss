@@ -1,33 +1,28 @@
 @import './utils/fonts';
-
 @import './utils/variables';
-
+@import './utils/texts';
 @import './base';
-
 @import './utils/utils';
 
+
 @import './components/sections';
-
 @import './components/buttons';
-
 @import './components/links';
 
-@import './components/header';
-
-@import './components/hero-section';
-
-@import './components/traditions';
 
 @import './components/advantages';
-
-@import './components/bakers';
-
-@import './components/formats';
-
+@import './components/chefs';
+@import './components/chef-card';
 @import './components/contacts';
-
+@import './components/format-card';
+@import './components/formats-section';
+@import './components/form-terms';
 @import './components/footer';
-
+@import './components/header';
+@import './components/hero-section';
 @import './components/modal-form';
+@import './components/input';
+@import './components/traditions';
+
 
 // @import './utils/mixins';

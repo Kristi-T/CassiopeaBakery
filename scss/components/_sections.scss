@@ -1,5 +1,15 @@
 .section {
 	padding: 48px 0;
+	&__title {
+			color: var(--color-primary-dark);
+			font-size: 64px;
+			font-weight: 900;
+			line-height: 84px;
+
+			&--centered {
+					text-align: center;
+				}
+		}
 }
 
 .container {
@@ -9,20 +19,4 @@
 	padding: 0 24px;
 }
 
-.section-title {
-	color: var(--color-primary-dark);
-	font-size: 64px;
-	font-weight: 900;
-	line-height: 84px;
-}
 
-.section-title.centered {
-	text-align: center;
-}
-
-.section-title .section-title-accent {
-	color: var(--color-brand-dark);
-	font-size: 64px;
-	font-weight: 900;
-	line-height: 84px;
-}
