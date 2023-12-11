@@ -1,5 +1,5 @@
 .button-primary {
-display: block;
+	display: block;
 	padding: 16px 32px;
 	color: var(--color-primary-light);
 	border-radius: 8px;
@@ -34,14 +34,17 @@ display: block;
 	background-color: transparent;
 	border: 1px solid var(--color-primary-dark);
 	cursor: pointer;
+	&:hover {
+			background-color: var(--color-primary-dark);
+			fill: var(--color-primary-light);
+		}
+
+	&.next {
+			transform: rotate(180deg);
+		}	
 }
 
-.carousel-button:hover {
-	background-color: var(--color-primary-dark);
-	fill: var(--color-primary-light);
-}
 
-.carousel-button.next {
-	transform: rotate(180deg);
-}
+
+
 
