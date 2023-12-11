@@ -1,8 +1,12 @@
 .traditions-section {
-	padding-top: 96px;
+	padding-top: 40px;
+		@media screen and (min-width: $bp-tablet) {
+				padding-top: 96px;
+			}
 	&__container {
 			display: flex;
 			justify-content: space-between;
+			align-items: flex-start;
 			gap: 40px;
 		}
 		&__content {
@@ -12,16 +16,18 @@
 			margin-bottom: 42px;
 		}
 		&__photo {
+		display: none;
+			
+			// flex-shrink: 0;
+			// flex-grow: 1;
+			@media screen and (min-width: $bp-tablet) {
 			border-radius: 400px 400px 0px 0px;
-			flex-shrink: 0;
-			flex-grow: 1;
+			display: block;
+				}
 		}
 		&__text{
 				&--limited{max-width: 340px;}
 					
 				}
 }
-
-
-
 

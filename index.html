@@ -40,9 +40,22 @@
               </li>
             </ul>
           </nav>
-          <button class="button-primary modal-btn-open" type="button">
+          <button
+            class="header__button button-primary modal-btn-open"
+            type="button"
+          >
             Замовити дзвінок
           </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="/images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              Close
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -52,6 +65,12 @@
           <h1 class="hero-section__title" lang="en">
             <span class="text-brand" lang="en">Cassiopea</span> Modern Bakery
           </h1>
+          <button
+            class="hero-section__button button-primary modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
+          </button>
         </div>
       </section>
       <section class="advantages-section">
@@ -100,7 +119,7 @@
           </div>
         </div>
       </section>
-      <section class="chefs-section section" id="chefs-section">
+      <!-- <section class="chefs-section section" id="chefs-section">
         <div class="container">
           <h2
             class="chefs-section__title section__title section__title--centered"
@@ -151,8 +170,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="formats-section section" id="formats-section">
+      </section> -->
+      <!-- <section class="formats-section section" id="formats-section">
         <div class="container">
           <h2
             class="formats-section__title section__title section__title--centered"
@@ -225,8 +244,8 @@
             </button>
           </div>
         </div>
-      </section>
-      <section class="contacts-section section" id="contacts-section">
+      </section> -->
+      <!-- <section class="contacts-section section" id="contacts-section">
         <div class="container">
           <div class="contacts-section__container">
             <div class="contacts-section__form">
@@ -236,8 +255,6 @@
               <p class="text-brand-dark">
                 Заповни форму, щоб ми звʼязались з тобою!
               </p>
-              <!-- Form -->
-              <!-- class="contacts-section__form" -->
               <form name="contact-form" novalidate autocomplete="off">
                 <div class="contacts-section__form-field input">
                   <label class="input__label visually-hidden" for="user-name">
@@ -302,9 +319,9 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         <div class="footer-container">
           <nav class="footer-nav">
@@ -365,7 +382,6 @@
                   <svg class="address-icon" width="32" height="32">
                     <use href="/images/sprite.svg#icon-facebook"></use>
                   </svg>
-                  <!-- facebook -->
                 </a>
               </li>
               <li>
@@ -373,7 +389,6 @@
                   <svg class="address-icon" width="32" height="32">
                     <use href="/images/sprite.svg#icon-instagram"></use>
                   </svg>
-                  <!-- instagram -->
                 </a>
               </li>
             </ul>
@@ -386,15 +401,14 @@
           </address>
         </div>
       </div>
-    </footer>
-    <!-- backdrop__is-hidden  -->
-    <div class="backdrop">
+    </footer> -->
+
+    <!-- <div class="backdrop">
       <div class="modal">
-        <button type="button" class="modal__btn-close modal-btn-close">
-          <!-- <svg width="16" height="16">
+        <button type="button" class="modal-btn-close modal__btn-close">
+          <svg width="16" height="16">
             <use href="/images/sprite.svg#icon-cross"></use>
-          </svg> -->
-          Close
+          </svg>
         </button>
         <h2 class="modal__title">Замовити дзвінок</h2>
         <p class="modal__subtitle">
@@ -439,18 +453,6 @@
               placeholder="Електронна пошта"
             />
           </div>
-          <!-- <div class="checkbox">
-            <input
-              class="checkbox-input visually-hidden"
-              type="checkbox"
-              id="terms-conditions"
-              name="terms-conditions"
-            />
-            <label class="checkbox-label" for="terms-conditions"
-              >Натискаючи на кнопку я погоджуюсь з політикою
-              конфіденційності</label
-            >
-          </div> -->
 
           <button class="modal__button button-primary" type="submit">
             Замовити дзвінок
@@ -461,7 +463,8 @@
           </p>
         </form>
       </div>
-    </div>
+    </div> -->
+    <script src="js/mobile-menu.js"></script>
     <script src="js/modal.js"></script>
   </body>
 </html>

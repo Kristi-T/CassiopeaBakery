@@ -32,8 +32,9 @@
 			position: absolute;
 			top: 40px;
 			right: 40px;
-			// background-color: transparent;
-			// border: 0px solid var(--color-primary-dark);
+			background-color: transparent;
+			border: 0px solid var(--color-primary-dark);
+			cursor: pointer;
 		}
 
 	&__title {
@@ -61,7 +62,6 @@
 	}
 
 	&__button{
-	display: block;
 	margin: 0 auto 24px;
 	}
 }
